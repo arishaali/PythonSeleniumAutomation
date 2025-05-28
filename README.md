@@ -13,7 +13,7 @@ This project contains automated test scripts for the demo application [CURA Heal
 - **Design Pattern:** Page Object Model (POM)  
 - **Reporting & Config:** Pytest.ini, conftest.py
 
-## 🛠️ How to Run the Tests
+### 🛠️ How to Run the Tests
 
 > Follow these steps to run the automation tests for the CURA Healthcare Service project on your local machine.
 
