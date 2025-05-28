@@ -19,7 +19,6 @@ This project contains automated test scripts for the demo application [CURA Heal
 
 ### 📥 1. Clone the Repository
 git clone [Project](https://github.com/arishaali/PythonSeleniumAutomation/tree/main)
-cd "QA-Portfolio/Cura Healthcare Project"
 
 ### 🧪 2. (Optional) Create and Activate a Virtual Environment
 
