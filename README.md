@@ -18,7 +18,7 @@ This project contains automated test scripts for the demo application [CURA Heal
 > Follow these steps to run the automation tests for the CURA Healthcare Service project on your local machine.
 
 ### 📥 1. Clone the Repository
-git clone https://github.com/your-username/QA-Portfolio.git
+git clone [https://github.com/your-username/QA-Portfolio.git](https://github.com/arishaali/PythonSeleniumAutomation/tree/main)
 cd "QA-Portfolio/Cura Healthcare Project"
 
 ### 🧪 2. (Optional) Create and Activate a Virtual Environment
