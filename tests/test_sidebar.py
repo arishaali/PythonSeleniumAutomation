@@ -46,23 +46,23 @@ def test_sidebar_links_exist_after_login(browser):
         link_text = browser.find_element(By.LINK_TEXT,link)
         assert link_text.is_displayed(), f"{link_text} not in sidebar"
 
-# @pytest.mark.parametrize("link_text, expected_in_page", [
-#     ("Home", "CURA Healthcare Service"),
-#     ("History", "History"),
-#     ("Profile", "Profile"),
-#     ("Logout", "CURA Healthcare Service"),
-# ])
-# def test_sidebar_links_navigation_after_login(browser, link_text, expected_in_page):
-#     browser.get("https://katalon-demo-cura.herokuapp.com/")
-#     browser.find_element(By.ID, "btn-make-appointment").click()
+@pytest.mark.parametrize("link_text, expected_in_page", [
+    ("Home", "CURA Healthcare Service"),
+    ("History", "History"),
+    ("Profile", "Profile"),
+    ("Logout", "CURA Healthcare Service"),
+])
+def test_sidebar_links_navigation_after_login(fresh_browser, link_text, expected_in_page):
+    fresh_browser.get("https://katalon-demo-cura.herokuapp.com/")
+    fresh_browser.find_element(By.ID, "btn-make-appointment").click()
 
-#     login = LoginPage(browser)
-#     login.login("John Doe", "ThisIsNotAPassword")
+    login = LoginPage(fresh_browser)
+    login.login("John Doe", "ThisIsNotAPassword")
 
-#     browser.find_element(By.ID, "menu-toggle").click()
-#     browser.find_element(By.LINK_TEXT, link_text).click()
+    fresh_browser.find_element(By.ID, "menu-toggle").click()
+    fresh_browser.find_element(By.LINK_TEXT, link_text).click()
 
-#     assert expected_in_page in browser.page_source
+    assert expected_in_page in fresh_browser.page_source
 
 
 
